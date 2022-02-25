@@ -5,7 +5,7 @@ var axios = require("axios").default;
 
 const router = require("express").Router();
 
-router.get('/getBooks', (res, req) => {
+router.get('/getBooks', (req, res) => {
 
     var options = {
       method: 'GET',
@@ -18,7 +18,7 @@ router.get('/getBooks', (res, req) => {
     
     axios.request(options).then(function (response) {
         console.log(response.data);
-        // res.json(response.data)
+        res.json(response.data)
     }).catch(function (error) {
         console.error(error);
     });

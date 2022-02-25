@@ -1,4 +1,4 @@
-s
+
 function getBooks() {
 
     fetch("api/books/getbooks", {
