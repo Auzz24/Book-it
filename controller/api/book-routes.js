@@ -18,7 +18,7 @@ router.get('/getBooks', (res, req) => {
     
     axios.request(options).then(function (response) {
         console.log(response.data);
-        res.json(response.data)
+        // res.json(response.data)
     }).catch(function (error) {
         console.error(error);
     });
