@@ -1,11 +1,11 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-// create our User model
-class User extends Model {}
+// create our RENT model
+class Rent extends Model {}
 
 // define table columns and configuration
-User.init(
+Rent.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -16,21 +16,6 @@ User.init(
     username: {
       type: DataTypes.STRING,
       allowNull: false
-    },
-    email: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      unique: true,
-      validate: {
-        isEmail: true
-      }
-    },
-    password: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      validate: {
-        len: [4]
-      }
     }
   },
   {
@@ -38,8 +23,8 @@ User.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'user'
+    modelName: 'rent'
   }
 );
 
-module.exports = User;
+module.exports = Rent;
