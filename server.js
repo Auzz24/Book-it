@@ -33,7 +33,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(require('./controller'));
 
-
 // turn on connection to database and server
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
