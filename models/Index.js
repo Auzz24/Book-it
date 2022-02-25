@@ -1,2 +1,3 @@
 const Rent = require('./Rent');
-module.exports = { Rent };
+const User = require('./User')
+module.exports = { Rent , User };

@@ -1,1 +1,0 @@
-//will populate hoomepage and rent page 

@@ -7,16 +7,36 @@ class Rent extends Model {}
 // define table columns and configuration
 Rent.init(
   {
-    id: {
+    username: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+      id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
       autoIncrement: true
     },
-    username: {
-      type: DataTypes.STRING,
-      allowNull: false
-    }
+      title:{
+        type: DataTypes.STRING,
+        allowNull: false
+      },
+      author: {
+        type: DataTypes.STRING,
+        allowNull: false
+      },
+      smallImageURL:{
+        type: DataTypes.STRING,
+        allowNull: false
+      },
+      available: {
+        type: DataTypes.BOOLEAN,
+        allowNull: false
+      },
+      pricePerWeek: {
+        type: DataTypes.INTEGER,
+        allowNull: false
+      },
   },
   {
     sequelize,
