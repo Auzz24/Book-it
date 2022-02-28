@@ -1,23 +1,47 @@
 const router = require('express').Router();
-const { Rent } = require('../../models');
+const { Rent , User } = require('../../models');
+const sequelize = require('../../config/connection');
 
 router.get('/', (req, res) => {
-    Rent.findAll({
-      attributes: [
-          'username',
-        'id',
-        'title',
-        'author',
-        'smallImageURL',
-        'available',
-        'pricePerWeek'
-      ]
-    }) .then(dbRentData => res.json(dbRentData))
-    .catch(err => {
-      console.log(err);
-      res.status(500).json(err);
-    });
+  Rent.findAll({
+    attributes: [
+      'id',
+      'title',
+      'author',
+      'smallImageURL',
+      'available',
+      'pricePerWeek'
+    ],
+    include: [
+      {
+        model: User,
+        attributes: ['username']
+      }
+    ]
+  }) .then(dbRentData => res.json(dbRentData))
+  .catch(err => {
+    console.log(err);
+    res.status(500).json(err);
   });
+});
+
+// router.get('/', (req, res) => {
+//   Rent.findAll({
+//     attributes: [
+//       'id', 'username','title', 'author', 'smallImageURL', 'available', 'pricePerWeek'
+//     ],
+//   })
+  
+//     .then(dbRentData => {
+//       console.log(dbRentData[0]);
+//       const rent = dbRentData.map(post => rent.get({ plain: true }));
+//       res.render('rent', {rent});
+//     })
+//     .catch(err => {
+//       console.log(err);
+//       res.status(500).json(err);
+//     });
+// });
 
   
 router.get('/:id', (req, res) => {
@@ -25,13 +49,13 @@ router.get('/:id', (req, res) => {
     where: {
       id: req.params.id
     },
-    attributes: [ 'id', 'username','title', 'author', 'smallImageURL', 'available', 'pricePerWeek'],
-    // include: [
-    //   {
-    //     model: User,
-    //     attributes: ['username']
-    //   }
-    // ]
+    attributes: [ 'id','title', 'author', 'smallImageURL', 'available', 'pricePerWeek'],
+    include: [
+      {
+        model: User,
+        attributes: ['username']
+      }
+    ]
   })
     .then(dbRentData => {
       if (!dbRentData) {

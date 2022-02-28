@@ -7,10 +7,6 @@ class Rent extends Model {}
 // define table columns and configuration
 Rent.init(
   {
-    username: {
-      type: DataTypes.STRING,
-      allowNull: false
-    },
       id: {
       type: DataTypes.INTEGER,
       allowNull: false,
@@ -37,10 +33,16 @@ Rent.init(
         type: DataTypes.INTEGER,
         allowNull: false
       },
+      user_id: {
+        type: DataTypes.INTEGER,
+        references: {
+          model: 'user',
+          key: 'id'
+        }
   },
+},
   {
     sequelize,
-    timestamps: false,
     freezeTableName: true,
     underscored: true,
     modelName: 'rent'
