@@ -14,13 +14,12 @@
   - [Additional Information](#additional-info)
 
  ## Collaborators
-  Austin Miller
-  RC Schornick
-  Nehaila Ait Belouali
+  Austin Miller, 
+  RC Schornick, 
+  Nehaila Ait Belouali, 
   Kris Lopez
 
   ## GitHub Username
-  
   
   
 

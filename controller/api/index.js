@@ -11,6 +11,7 @@ const rentRoutes = require('./rent-routes');
 
 router.use('/books', bookRoutes);
 router.use('/rent', rentRoutes);
+router.use('/buy', buyRoutes);
 >>>>>>> 81ab4c9ace450a0bf07eec26213e366bea15b121
 
 module.exports = router;
