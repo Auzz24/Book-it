@@ -1,6 +1,6 @@
 
-const PORT = process.env.PORT || 3001;
-// import the Sequelize constructor
+// const PORT = process.env.PORT || 3001;
+// // import the Sequelize constructor
 const Sequelize = require('sequelize');
 require('dotenv').config();
 
