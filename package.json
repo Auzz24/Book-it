@@ -4,7 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "seed": "node seeds/index.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,8 @@
   },
   "homepage": "https://github.com/Auzz24/Book-it#readme",
   "dependencies": {
+    "axios": "^0.26.0",
+    "connect-session-sequelize": "^7.1.2",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
     "express-handlebars": "^6.0.2",
@@ -25,5 +28,6 @@
     "fs": "^0.0.1-security",
     "mysql2": "^2.3.3",
     "sequelize": "^6.16.2"
-  }
+  },
+  "proxy": "localhost:3001"
 }

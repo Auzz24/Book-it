@@ -5,7 +5,7 @@ var axios = require("axios").default;
 
 const router = require("express").Router();
 
-router.get('/getBooks', (res, req) => {
+router.get('/getBooks', (req, res) => {
 
     var options = {
       method: 'GET',
@@ -25,3 +25,7 @@ router.get('/getBooks', (res, req) => {
     
     
 })
+
+
+
+module.exports = router;
