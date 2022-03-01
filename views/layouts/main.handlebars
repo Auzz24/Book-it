@@ -12,22 +12,19 @@
         </header>
         <nav>
             <a href="/">Home</a>
-            {{#if loggedIn}}
             <button id="logout" class="btn-no-style">Logout</button>
-            {{else}}
             <a href="/login">Login</a>
-            {{if}}
+            <a href="/api/rent">Rent books Here</a>
         </nav>
         <main>
             <aside>
                 <h2>Books for Rent</h2>
             </aside>
             <div class="books">
-                {{body}}
             </div>
         </main>
-        {{#if loggedIn}}
+        {{!-- {{#if loggedIn}}
         <script src="/js/logout.js"></script>
-        {{if}}
+        {{if}} --}}
     </body>
 </html>
