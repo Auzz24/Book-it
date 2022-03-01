@@ -23,29 +23,39 @@ router.get('/', (req, res) => {
         attributes: ['username']
       }
     ]
-  }) .then(dbRentData => res.json(dbRentData))
+  })  .then(dbRentData => {
+    if (dbRentData) {
+      const rent = dbRentData.get({ plain: true });
+      
+      res.render('rent', {
+        rent,
+        loggedIn: false
+      });
+    } else {
+      res.status(404).end();
+    }
+  })
   .catch(err => {
-    console.log(err);
     res.status(500).json(err);
   });
 });
 
-router.get('/', (req, res) => {
-  Rent.findAll({
-    attributes: [
-      'id','title', 'author', 'smallImageURL', 'available', 'pricePerWeek'
-    ],
-  })
-  .then(dbRentData => {
-    const posts = dbRentData.map(rent => rent.get({ plain: true }));
+// router.get('/', (req, res) => {
+//   Rent.findAll({
+//     attributes: [
+//       'id','title', 'author', 'smallImageURL', 'available', 'pricePerWeek'
+//     ],
+//   })
+//   .then(dbRentData => {
+//     const posts = dbRentData.map(rent => rent.get({ plain: true }));
 
-    res.render('rent', { posts });
-  })
-  .catch(err => {
-    console.log(err);
-    res.status(500).json(err);
-  });
-});
+//     res.render('rent', { posts });
+//   })
+//   .catch(err => {
+//     console.log(err);
+//     res.status(500).json(err);
+//   });
+// });
 
 
   

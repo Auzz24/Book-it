@@ -5,7 +5,7 @@ const rentRoutes = require('../controller/api/rent-routes')
 
 router.use('/api', apiRoutes);
 router.use('/', homeRoutes);
-router.use('rent', rentRoutes);
+router.use('/rent', rentRoutes);
 
 
 module.exports = router;
