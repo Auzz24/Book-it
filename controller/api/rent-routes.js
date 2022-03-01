@@ -2,28 +2,32 @@ const router = require('express').Router();
 const { Rent , User } = require('../../models');
 const sequelize = require('../../config/connection');
 
+
 router.get('/', (req, res) => {
-  Rent.findAll({
-    attributes: [
-      'id',
-      'title',
-      'author',
-      'smallImageURL',
-      'available',
-      'pricePerWeek'
-    ],
-    include: [
-      {
-        model: User,
-        attributes: ['username']
-      }
-    ]
-  }) .then(dbRentData => res.json(dbRentData))
-  .catch(err => {
-    console.log(err);
-    res.status(500).json(err);
-  });
+  res.render('rent');
 });
+// router.get('/', (req, res) => {
+//   Rent.findAll({
+//     attributes: [
+//       'id',
+//       'title',
+//       'author',
+//       'smallImageURL',
+//       'available',
+//       'pricePerWeek'
+//     ],
+//     include: [
+//       {
+//         model: User,
+//         attributes: ['username']
+//       }
+//     ]
+//   }) .then(dbRentData => res.json(dbRentData))
+//   .catch(err => {
+//     console.log(err);
+//     res.status(500).json(err);
+//   });
+// });
 
 // router.get('/', (req, res) => {
 //   Rent.findAll({
