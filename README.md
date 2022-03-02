@@ -21,7 +21,11 @@
    * Kris Lopez
 
   ## GitHub Username
-
+  Github Accounts are listed below:
+  * Nehalia - GitHub.com/nehailaa, 
+  * Rachel-Claire - github.com/RCSchornick, 
+  * Austin - github.com/Auzz24,
+  * Kris - github.com/krislopezTX
   
 
   ## About Us
