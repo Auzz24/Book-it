@@ -72,19 +72,24 @@ router.post('/login', (req, res) => {
       email: req.body.email
     }
   }).then(dbUserData => {
+    console.log(dbUserData);
     if (!dbUserData) {
       res.status(400).json({ message: 'No user with that email address!' });
       return;
     }
 
     const validPassword = dbUserData.checkPassword(req.body.password);
-
+console.log(validPassword);
     if (!validPassword) {
       res.status(400).json({ message: 'Incorrect password!' });
       return;
     }
-
-    res.json({ user: dbUserData, message: 'You are now logged in!' });
+    req.session.save(()=>{
+      req.session.userID = dbUserData.id;
+      req.session.useremail = dbUserData.email;
+      req.session.loggedin = true
+      res.json({ user: dbUserData, message: 'You are now logged in!' });
+    })
   });
 });
 
@@ -126,6 +131,19 @@ router.delete('/:id', (req, res) => {
       console.log(err);
       res.status(500).json(err);
     });
+});
+
+router.post('/logout', (req, res) => {
+  console.log('test')
+  if (req.session.loggedin) {
+    req.session.destroy(() => {
+      res.status(204).end();
+    });
+  }
+  else {
+    res.status(404).end();
+  }
+
 });
 
 module.exports = router;

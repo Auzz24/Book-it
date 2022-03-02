@@ -22,7 +22,10 @@ router.get('/', (req, res) => {
   })   .then(dbRentData => {
     const rents = dbRentData.map(rent => rent.get({ plain: true }));
 console.log(rents);
-    res.render('homepage', { rents });
+    res.render('homepage', { 
+      rents,
+      loggedin: req.session.loggedin
+     });
   })
   .catch(err => {
     console.log(err);
@@ -41,6 +44,10 @@ router.get('/login', (req, res) => {
 
 router.get('/rent', (req, res) => {
   res.render('rent');
+});
+
+router.get('/register', (req, res) => {
+  res.render('register');
 });
 
 router.get('/', (req, res) => {
