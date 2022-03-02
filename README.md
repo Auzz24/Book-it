@@ -15,7 +15,7 @@
 
  ## Collaborators
   The following team members collaborated to create this project:
-   *Austin Miller,  
+   * Austin Miller,  
    *RC Schornick,  
    *Nehaila Ait Belouali
    *Kris Lopez
