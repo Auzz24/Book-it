@@ -14,8 +14,8 @@
   - [Additional Information](#additional-info)
 
  ## Collaborators
-  - [Austin Miller](#collaborator1) 
-  - [RC Schornick](#collaborator2) 
+  *Austin Miller 
+  *RC Schornick 
   - [Nehaila Ait Belouali](#collaborator3) 
   - [Kris Lopez](#collaborator4)
 
