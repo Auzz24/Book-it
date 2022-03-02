@@ -16,15 +16,16 @@
  ## Collaborators
   The following team members collaborated to create this project:
    * Austin Miller,  
-   *RC Schornick,  
-   *Nehaila Ait Belouali
-   *Kris Lopez
+   * RC Schornick,  
+   * Nehaila Ait Belouali
+   * Kris Lopez
 
   ## GitHub Username
-  Nehalia - GitHub.com/nehailaa, 
-  Rachel-Claire - github.com/RCSchornick, 
-  Austin - github.com/Auzz24,
-  Kris - github.com/krislopezTX
+  Github Accounts are listed below:
+  * Nehalia - GitHub.com/nehailaa, 
+  * Rachel-Claire - github.com/RCSchornick, 
+  * Austin - github.com/Auzz24,
+  * Kris - github.com/krislopezTX
   
 
   ## About Us
