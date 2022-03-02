@@ -23,7 +23,7 @@
   Nehalia - GitHub.com/nehailaa, 
   Rachel-Claire - github.com/RCSchornick, 
   Austin - github.com/Auzz24,
-  Kris - github.com/
+  Kris - github.com/krislopezTX
   
 
   ## About Us
