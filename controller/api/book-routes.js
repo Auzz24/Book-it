@@ -12,7 +12,7 @@ router.get('/getBooks', (req, res) => {
       url: 'https://goodreads-books.p.rapidapi.com/genres/textbook/best',
       headers: {
         'x-rapidapi-host': 'goodreads-books.p.rapidapi.com',
-        'x-rapidapi-key': '94c895e35bmsha5d3d63d53d272ap14d10cjsn4a1ba9717cc5'
+        'x-rapidapi-key': '99f96aae53msh9a0e5b42e091eeep12e261jsn062edb68215d'
       }
     };
     
