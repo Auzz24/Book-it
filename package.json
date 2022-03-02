@@ -20,6 +20,7 @@
   "homepage": "https://github.com/Auzz24/Book-it#readme",
   "dependencies": {
     "axios": "^0.26.0",
+    "bcrypt": "^5.0.1",
     "connect-session-sequelize": "^7.1.2",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",

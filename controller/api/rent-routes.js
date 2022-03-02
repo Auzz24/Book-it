@@ -3,10 +3,6 @@ const { Rent , User } = require('../../models');
 const sequelize = require('../../config/connection');
 
 
-// router.get('/', (req, res) => {
-//   res.render('rent');
-// });
-
 router.get('/', (req, res) => {
   Rent.findAll({
     attributes: [
@@ -23,22 +19,17 @@ router.get('/', (req, res) => {
         attributes: ['username']
       }
     ]
-  })  .then(dbRentData => {
-    if (dbRentData) {
-      const rent = dbRentData.get({ plain: true });
-      
-      res.render('rent', {
-        rent,
-        loggedIn: false
-      });
-    } else {
-      res.status(404).end();
-    }
+  })   .then(dbPostData => {
+    const rents = dbRentData.map(rent => rent.get({ plain: true }));
+
+    res.render('homepage', { rents });
   })
   .catch(err => {
+    console.log(err);
     res.status(500).json(err);
   });
 });
+
 
 // router.get('/', (req, res) => {
 //   Rent.findAll({

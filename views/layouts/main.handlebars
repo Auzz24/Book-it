@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Book It</title>
-        <link rel="stylesheet" type="text/css" href="">
+        <link rel="stylesheet" type="text/css" href="css/stylesheet/policy.css">
     </head>
     <body>
         <header>
@@ -14,17 +14,14 @@
             <a href="/">Home</a>
             <button id="logout" class="btn-no-style">Logout</button>
             <a href="/login">Login</a>
-            <a href="/rent">Rent books Here</a>
         </nav>
         <main>
             <aside>
                 <h2>Books for Rent</h2>
+                {{{body}}}
             </aside>
             <div class="books">
             </div>
         </main>
-        {{!-- {{#if loggedIn}}
-        <script src="/js/logout.js"></script>
-        {{if}} --}}
     </body>
 </html>

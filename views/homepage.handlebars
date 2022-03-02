@@ -1,4 +1,17 @@
-{{!-- 
-{{#each books as |book|}}
-{{> book-details}}
-{{/each}} --}}
+ <section class="rent"> 
+    {{#each rents as | rent| }} 
+  <div class="rent-details">
+
+  <section class="rentPost">
+  <img src="{{samllImageURL}}" alt="Book cover">
+    <h1>{{rent.title}}</h1>
+    <h2>{{rent.author}}</h2>
+    <h3>{{rent.available}}</h3>
+    <h4>{{rent.pricePerWeek}}</h4>
+  </a>
+</section>
+  
+</section>
+  </div> 
+  {{/each}}
+</section>

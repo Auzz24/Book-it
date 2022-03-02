@@ -1,5 +1,5 @@
 const Rent = require('./Rent');
-const User = require('./Users')
+const User = require('./User')
 
 User.hasMany(Rent, {
     foreignKey:'user_id'
