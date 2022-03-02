@@ -16,8 +16,8 @@
  ## Collaborators
   - [Austin Miller](#collaborator1) 
   - [RC Schornick](#collaborator2) 
-  Nehaila Ait Belouali, 
-  Kris Lopez
+  - [Nehaila Ait Belouali](#collaborator3) 
+  - [Kris Lopez](#collaborator4)
 
   ## GitHub Username
   Nehalia - GitHub.com/nehailaa, 
