@@ -14,10 +14,11 @@
   - [Additional Information](#additional-info)
 
  ## Collaborators
-  *Austin Miller 
-  *RC Schornick 
-  - [Nehaila Ait Belouali](#collaborator3) 
-  - [Kris Lopez](#collaborator4)
+  The following team members collaborated to create this project:
+   *Austin Miller,  
+   *RC Schornick,  
+   *Nehaila Ait Belouali
+   *Kris Lopez
 
   ## GitHub Username
   Nehalia - GitHub.com/nehailaa, 
