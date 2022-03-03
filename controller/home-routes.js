@@ -50,6 +50,10 @@ router.get('/register', (req, res) => {
   res.render('register');
 });
 
+router.get('/addpost', (req, res) => {
+  res.render('addpost');
+});
+
 router.get('/', (req, res) => {
   res.render('homepage');
 });
