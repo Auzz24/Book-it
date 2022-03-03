@@ -46,6 +46,10 @@ router.get('/rent', (req, res) => {
   res.render('rent');
 });
 
+router.get('/payment', (req, res) => {
+  res.render('payment');
+});
+
 router.get('/register', (req, res) => {
   res.render('register');
 });
