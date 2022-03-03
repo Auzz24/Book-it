@@ -60,18 +60,20 @@
   </section>
                           {{#if loggedin}}
 
-                  <section class="container">
+                  <section class="vh-100" style="background-color: #9A616D;">
                       {{#each rents as |rent| }}
-                      <div class="row">
-                        <section class="">
+                      <div class="d-flex align-items-left mb-3 pb-1 border border-white px-3 py-3">
+                        <section>
                           <img src="{{rent.smallImageURL}}" alt="Book cover"/>
-                          <h1>{{rent.title}}</h1>
-                          <h2>{{rent.author}}</h2>
-                          <h3>{{rent.available}}</h3>
-                          <h4>{{rent.pricePerWeek}}</h4>
+                          <h3>Title:  {{rent.title}}</h1>
+                          <h4>Author:  {{rent.author}}</h2>
+                          <h4>Available:  {{rent.available}}</h3>
+                          <h4>Price Per Week:  ${{rent.pricePerWeek}}</h4>
+                            <div class="pt-1 mb-4">
+                      <button class="btn btn-dark btn-lg btn-block" type="payment">RENT THIS BOOK</button>
+                    </div>
                         </section>
                       </div>
-
                 {{/each}}
                   </section>
                           {{/if}}

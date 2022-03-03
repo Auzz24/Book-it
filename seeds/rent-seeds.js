@@ -13,7 +13,7 @@ const rentdata = [
   },
   {
     username: 'Ronboi',
-    title: 'https://www.goodreads.com/book/show/108986.Introduction_to_Algorithms',
+    title: 'Introduction_to_Algorithms',
     author: 'Thomas H. Cormen',
     smallImageURL: 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1387741681l/108986._SX50_.jpg',
     available: false, 
