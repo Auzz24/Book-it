@@ -28,7 +28,7 @@
     "express-session": "^1.17.2",
     "fs": "^0.0.1-security",
     "mysql2": "^2.3.3",
-    "sequelize": "^6.16.2"
+    "sequelize": "^6.17.0"
   },
   "proxy": "localhost:3001"
 }

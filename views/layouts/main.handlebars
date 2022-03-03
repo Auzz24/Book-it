@@ -7,13 +7,30 @@
         <link rel="stylesheet" type="text/css" href="css/stylesheet/policy.css">
     </head>
     <body>
-        <header>
-            <h1>Welcome to Book It</h1>
-        </header>
-        <nav>
-            <a href="/">Home</a>
-            <button id="logout" class="btn-no-style">Logout</button>
-        </nav>
+
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <h1>Welcome to Book-It</h1>
+  <p>Providing students with affordable textbooks!</p> 
+</div>
+
+<nav class="navbar navbar-expand-sm bg-light navbar-light">
+  <a class="navbar-brand" href="#"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/">Home</a>
+      </li>
+      <li class="nav-item">
+        <a id="logout" class="nav-link">Logout</a>
+      </li>    
+    </ul>
+  </div>  
+</nav>
+            
         <main>
             <aside>
                 {{{body}}}
@@ -24,3 +41,6 @@
         <script src="/javascript/logout.js"></script>
     </body>
 </html>
+
+
+
