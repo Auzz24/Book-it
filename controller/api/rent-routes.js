@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Rent , User } = require('../../models');
+const { Rent , User } = require('../../models/Index');
 const sequelize = require('../../config/connection');
 
 
