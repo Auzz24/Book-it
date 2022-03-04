@@ -60,9 +60,9 @@
   </section>
                           {{#if loggedin}}
 
-                  <section class="vh-100" style="background-color: #9A616D;">
+                  <section class="vh-100" style="background-color: white;">
                       {{#each rents as |rent| }}
-                      <div class="d-flex align-items-left mb-3 pb-1 border border-white px-3 py-3">
+                      <div class="d-flex align-items-left mb-3 pb-1 border border-white px-3 py-3" style="background-color: #9A616D;">
                         <section>
                           <img src="{{rent.smallImageURL}}" alt="Book cover"/>
                           <h3>Title:  {{rent.title}}</h1>
@@ -70,7 +70,7 @@
                           <h4>Available:  {{rent.available}}</h3>
                           <h4>Price Per Week:  ${{rent.pricePerWeek}}</h4>
                             <div class="pt-1 mb-4">
-                      <button class="btn btn-dark btn-lg btn-block" type="payment"><a href="/payment">RENT THIS BOOK</a></button>
+                      <button class="btn btn-dark btn-lg" type="payment"><a href="/payment">RENT THIS BOOK</a></button>
                     </div>
                         </section>
                       </div>
