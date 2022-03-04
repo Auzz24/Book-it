@@ -1,5 +1,5 @@
 const sequelize = require('../config/connection');
-const { Rent } = require('../models/Index.js');
+const { Rent } = require('../models/index.js');
 
 const rentdata = [
   {
