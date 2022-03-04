@@ -43,7 +43,7 @@
 
     
   ## Languages
-  HTML, CSS, JavaScript,ES6,Node, Bootstrap, jQuery
+  HTML, CSS, JavaScript, ES6, Node, Bootstrap, MySQL, jQuery
 
   ## Installation
  
