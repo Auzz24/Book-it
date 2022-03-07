@@ -21,6 +21,7 @@ router.get('/', (req, res) => {
     ]
   })   .then(dbRentData => {
     const rents = dbRentData.map(rent => rent.get({ plain: true }));
+    console.log(req.session.loggedin);
 console.log(rents);
     res.render('homepage', { 
       rents,
@@ -55,7 +56,38 @@ router.get('/register', (req, res) => {
 });
 
 router.get('/addpost', (req, res) => {
-  res.render('addpost');
+  Rent.findAll( {
+    where: {
+      // use the ID from the session
+      user_id: req.session.userID
+    }},
+    {
+    attributes: [
+      'id',
+      'title',
+      'author',
+      'smallImageURL',
+      'available',
+      'pricePerWeek'
+    ],
+    include: [
+      {
+        model: User,
+        attributes: ['username']
+      }
+    ]
+  })   .then(dbRentData => {
+    const userPost = dbRentData.map(rent => rent.get({ plain: true }));
+    console.log(req.session.loggedin);
+    res.render('addpost', { 
+      userPost,
+      loggedin: req.session.loggedin
+     });
+  })
+  .catch(err => {
+    console.log(err);
+    res.status(500).json(err);
+  });
 });
 
 router.get('/', (req, res) => {

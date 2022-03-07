@@ -79,13 +79,12 @@ router.get('/:id', (req, res) => {
 // POST /api/users
 router.post('/', (req, res) => {
   Rent.create({
-    username: req.body.username,
-    id: req.body.id,
     title: req.body.title,
     author: req.body.author,
     smallImageURL: req.body.smallImageURL,
-    available: req.body.available,
-    pricePerWeek: req.body.pricePerWeek
+    available: true,
+    pricePerWeek: req.body.pricePerWeek,
+    user_id: req.session.userID
   })
     .then(dbRentData => res.json(dbRentData))
     .catch(err => {
