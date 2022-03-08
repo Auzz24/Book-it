@@ -40,10 +40,11 @@
   * Show users if a book is available to rent or not.
   * Allow book renters to create a 'Renter' account.
   * Allow students to purchase a new book available for sale.
+  * Use app at : https://stormy-caverns-67766.herokuapp.com/
 
     
   ## Languages
-  HTML, CSS, JavaScript, ES6, Node, Bootstrap, MySQL, jQuery
+  HTML, CSS, JavaScript, ES6, Node, Bootstrap, MySQL, jQuery, Materialize
 
   ## Installation
  
@@ -52,7 +53,7 @@
   💻
 
   ## The Deployed Application
-
+  See deployed link at : https://stormy-caverns-67766.herokuapp.com/
   
   ## License
   MIT
