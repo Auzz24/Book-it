@@ -23,7 +23,7 @@ Rent.init(
       },
       smallImageURL:{
         type: DataTypes.STRING,
-        allowNull: false
+        allowNull: true
       },
       available: {
         type: DataTypes.BOOLEAN,
