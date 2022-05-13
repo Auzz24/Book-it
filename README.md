@@ -14,7 +14,7 @@
   - [Additional Information](#additional-info)
 
  ## Collaborators
-    The following team members collaborated to create this project from scrarch over a two week period
+    The following team members collaborated to create this project from scratch over a two week period
      as part of the SMU FULLSTACK BOOTCAMP:
    * Austin Miller,  
    * RC Schornick,  
