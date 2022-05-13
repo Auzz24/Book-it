@@ -37,7 +37,7 @@
   ## Description
   We are building a book rental application that will allow a single user to perform the following actions:
   * Create a User admin account.
-  * CRUD operations with books: Create new book listing, edit a book listing, and delete a book listing.
+  * Create a new book listing to sell your book! 
   * Show users if a book is available to rent or not.
   * Allow book renters to create a 'Renter' account.
   * Allow students to purchase a new book available for sale.
